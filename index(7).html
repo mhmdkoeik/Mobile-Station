@@ -9,7 +9,6 @@
 
 </head>
 
-
 <body class="body">
 
  <div class="header">
@@ -22,7 +21,7 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-     <a href="Aux-Categ.html">Aux </a>
+        <a href="Aux-Categ.html">Aux </a>
         <a href="bluetooth-categ.html">Bluetooth Speakers</a>
           <a href="Cables-categ.html">Cables</a>
 	           <a href="Car-Chargers-catg.html">Car Chargers</a>
@@ -43,36 +42,51 @@
 <br> 
  <p style="text-align:center;" ><img src="logo.jpg" alt="Logo" ></p>
 
-          <div class="column">
-                         <figure>              
-				        <img src="car1.jpg" alt="straight" width:100%;
-    height: 230px;>
-					    <figcaption Style="font-size:20px;"><b>One Port <b><br> <b style="font-size:30px;color:green";>8$</b> <br> <button id="btn1"onclick="alert('Added to Cart ')"><b style="font-size:20px;">Add To Cart</b></button> </figcaption>
-                                                
-			
-					   </figure>						
-                   
-              </div>
-  <div class="column">
-                   <figure>
-				   <img src="car2.jpg" alt="coiled" width:100%;
-    height: 230px;>
- <figcaption Style="font-size:20px;"><b>Two Ports<b><br> <b style="font-size:30px;color:green";>10$</b> <br> <button id="btn1"onclick="alert('Added to Cart ')"><b style="font-size:20px;">Add To Cart</b></button> </figcaption>  
-  </figure>
-  
-  
-  </div>
-  <div class="column">
-<figure>                  
-				  <img src="car3.jpg" alt="aux-apple" width:100%;
-    height: 230px;>
- <figcaption Style="font-size:20px;"><b>Three Ports<b><br> <b style="font-size:30px;color:green";>12$</b> <br> <button id="btn1"onclick="alert('Added to Cart ')"><b style="font-size:20px;">Add To Cart</b></button> </figcaption> 
- </figure>
- </div>
+<div class="row">
+          <div class="column" style="margin-left:185px;">
+ <form>
+ <fieldset style="border:4px solid black; margin-top:10px;" > 
+ <legend style="font-size:20px;text-align:center;border:2px solid black;background-color:#2196F3;color:white;margin-bottom:10px;padding-bottom:18px;"><b>Information:</b></legend>
+ <p style="text-align:left;font-size:30px;">
+CONTACT US 24/7<br>
+<br>--->For any info please<br> don’t hesitate to contact us.
+<br>
+</p>
+---------------------------------------------------------------------------
+<ul style="font-size:30px;">
+<p  style="font-size:30px;color:#2196F3">CONTACT INFO:<br>-----------------------</p>
+
+<li>Beirut, Lebanon</li>
+<li>Mobile: 76- 713 566</li>
+<li >Email: <a style="color:blue;"title="koeikrobben10@gmail.com" href="mailto:koeikrobben10@gmail.com">koeikrobben10@gmail.com</a></li>
+</ul>
 </div>
-
-
-      <footer class="footer-distributed">
+<div class="column" >
+<form >
+<fieldset style="border:4px solid black;">
+<legend style="font-size:20px;text-align:center;border:2px solid black;background-color:#2196F3;color:white;margin-bottom:10px;padding-bottom:18px;font-family:Arial";><br>Contact info:</b></legend> 
+<b style="font-size:30px; font-family:Courier New ";> First name:<b><br>
+  <input Style="border:2px solid black; font-size:30px;"type="text" name="firstname" required >
+  <br>
+  last name:<br>
+  <input Style="border:2px solid black; font-size:30px;" type="text" name="lastname" required >
+  <br>
+  Your Email:<br>
+   <input Style="border:2px solid black; font-size:30px;"type="email" name="Email" required >
+   <br>
+   Subject:<br>
+    <input Style="border:2px solid black; font-size:30px;"type="text" name="subject"  >
+  <br>
+  your Meassage:<br>
+  <textarea Style="border:2px solid black; font-size:30px;" name="message" rows="10" cols="30"> </textarea>
+  <br><br>
+  <input Style="border:2px solid black;color:white;font-size:25px;background-color:#2196F3;text-align:center;margin-left:200px; font-family:Arial; border-radius: 10px; " type="submit" value="Submit" onclick="myFunction()">
+</fieldset>
+  </form> 
+</div>
+</div>
+    
+	<footer class="footer-distributed">
 
 			<div class="footer-left">
 
@@ -102,9 +116,9 @@
 
 				<form  action="mailto:koeikrobben10@gmail.com" method="post" enctype="text/plain">
 
-					<input type="text" name="email" placeholder="Email" />
+					<input type="email" name="email" placeholder="Email" />
 					<textarea name="message" placeholder="Message"></textarea>
-					<button>Send</button>
+					<button >Send</button>
 
 				</form>
 
@@ -112,23 +126,9 @@
 
 		</footer>
 
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</script>
 </body>
 </html>
+
+
+

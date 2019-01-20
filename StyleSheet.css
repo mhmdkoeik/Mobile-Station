@@ -13,7 +13,7 @@
 }
 
 .header {
-      font-size: 15px; 
+      font-size: 20px; 
  background-color: rgba(255,255,255,0.5);
     font-family: Arial, Helvetica, sans-serif;
 	color:black;
@@ -21,37 +21,38 @@
 	width:100%;
 	margin-top: -10px;
  z-index: 10000;
+
 	}
 
 .header a {
       
    float: left;
-     color: black;
+     color: #2196F3;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 	display:inline;
-	
-	
+	font-weight:bold;
+
 }
 
 .dropdown {
     float: left;
- 
+ font-weight:bold;
 }
 
 .dropdown .dropbtn {
-    font-size: 15px;    
+    font-size: 20px;    
     border: none;
     outline: none;
-    color: black;
+    color:#2196F3 ;
     padding: 14px 16px;
    background-color: rgba(255,255,255,0.5);
-
+font-weight:bold;
 }
 
 .header a:hover, .dropdown:hover .dropbtn {
-    background-color:#2196F3;
+    background-color:	#C0C0C0;
 
 }
 
@@ -62,23 +63,23 @@ background-color: rgba(255,255,255,0.5);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-	color:black;
-  
+	color:#2196F3;
+  font-weight:bold;
 	}
 
 .dropdown-content a {
     float: none;
-    color: black;
+    color: #2196F3;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
 	background-color: rgba(255,255,255,0.5);
-	 
+	 font-weight:bold;
 }
 
 .dropdown-content a:hover {
-    background-color: #2196F3;
+    background-color: 	#C0C0C0;
 }
 
 .dropdown:hover .dropdown-content {
@@ -421,7 +422,6 @@ background: #00bcd4;
 	margin-right:125px;
 }
 
-	
 .footer-distributed{
 	background-color: #292c2f;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);

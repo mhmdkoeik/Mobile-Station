@@ -14,7 +14,7 @@
 
  <div class="header">
   <div class="logo">
-  <img  src="shopping-cart.png"  "width=22" "height:22">
+ 
   </div>
    <a  class ="active" href="Mobile-Station.html" >Home</a>
     <div class="dropdown">
@@ -24,7 +24,7 @@
     <div class="dropdown-content">
       <a href="Aux-Categ.html">Aux </a>
         <a href="bluetooth-categ.html">Bluetooth Speakers</a>
-          <a href="C:/Users/user/Desktop/Mobile-Station/Cables-categ.html">Cables</a>
+          <a href="Cables-categ.html">Cables</a>
 	           <a href="Car-Chargers-catg.html">Car Chargers</a>
                         <a href="Chargers-categ.html">Chargers</a>			           
 					           <a href="Earphone-categ.html">Earphones</a>
@@ -37,9 +37,7 @@
   </div> 
   <a href="Contact-Us.html">Contact-Us</a>
   <a href="About.html">About</a></b>
-    <form>
-	<input type="text" placeholder="Search..">
-	</form>
+  
 
 	</div>
 <br> 
@@ -49,7 +47,7 @@
                          <figure>              
 				        <img src="micro-charge.jpg" alt="straight" width:100%;
     height: 230px;>
-					    <figcaption Style="font-size:20px;"><b>Micro Charger<b><br> <b style="font-size:30px;color:green";>13$</b> <br> <button id="btn1"><a href="#" ><b style="font-size:20px;">Add To Cart</b></a></button> </figcaption>
+					    <figcaption Style="font-size:20px;"><b>Micro Charger<b><br> <b id="txt1"style="font-size:30px;color:green";>13$</b> <br> <button id="btn1" onclick="Added()"><b style="font-size:20px;">Add To Cart</b></button> </figcaption>
                                                 
 			
 					   </figure>						
@@ -59,7 +57,7 @@
                    <figure>
 				   <img src="apple-charge.jpg" alt="coiled" width:100%;
     height: 230px;>
- <figcaption Style="font-size:20px;"><b>Apple Charger<b><br> <b style="font-size:30px;color:green";>15$</b> <br> <button id="btn1"><a href="#" ><b style="font-size:20px;">Add To Cart</b></a></button> </figcaption>  
+ <figcaption Style="font-size:20px;"><b>Apple Charger<b><br> <b id="txt2"style="font-size:30px;color:green";>15$</b> <br> <button id="btn1" onclick="Added1()"><b style="font-size:20px;">Add To Cart</b></button> </figcaption>  
   </figure>
   
   
@@ -68,7 +66,7 @@
 <figure>                  
 				  <img src="fast-charger.jpg" alt="aux-apple" width:100%;
     height: 230px;>
- <figcaption Style="font-size:20px;"><b>Fast Charger<b><br> <b style="font-size:30px;color:green";>20$</b> <br> <button id="btn1"><a href="#" ><b style="font-size:20px;">Add To Cart</b></a></button> </figcaption> 
+ <figcaption Style="font-size:20px;"><b>Fast Charger<b><br> <b id="txt3" style="font-size:30px;color:green";>20$</b> <br> <button id="btn1" onclick="Added2()"><b style="font-size:20px;">Add To Cart</b></button> </figcaption> 
  </figure>
  </div>
 </div>
@@ -118,6 +116,18 @@
 
 
 
+<script>
+function Added() {
+  document.getElementById("txt1").innerHTML = "Added to card !";
+  }
+function Added1(){
+  document.getElementById("txt2").innerHTML = "Added to card !";
+  }
+  function Added2(){
+    document.getElementById("txt3").innerHTML = "Added to card !";
+	}
+	
+	</script>
 
 
 

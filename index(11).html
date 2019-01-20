@@ -1,4 +1,5 @@
 <html>
+
 <title> Mobile Station </title>
 <head>
 <meta charset="utf-8"/>
@@ -8,11 +9,13 @@
 <meta name="viewport" content = "width-device-width , initial-scale =1.0">
 
 </head>
+
+
 <body class="body">
 
  <div class="header">
   <div class="logo">
- 
+  
   </div>
    <a  class ="active" href="Mobile-Station.html" >Home</a>
     <div class="dropdown">
@@ -20,7 +23,7 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-        <a href="Aux-Categ.html">Aux </a>
+       <a href="Aux-Categ.html">Aux </a>
         <a href="bluetooth-categ.html">Bluetooth Speakers</a>
           <a href="Cables-categ.html">Cables</a>
 	           <a href="Car-Chargers-catg.html">Car Chargers</a>
@@ -35,30 +38,42 @@
   </div> 
   <a href="Contact-Us.html">Contact-Us</a>
   <a href="About.html">About</a></b>
-    
+   
+
 	</div>
 <br> 
  <p style="text-align:center;" ><img src="logo.jpg" alt="Logo" ></p>
 
-	<br>
-	<h1 Style="text-align:center">Who Are We?</h1>
+          <div class="column">
+                         <figure>              
+				        <img src="5000mah.jpg" alt="straight" width:100%;
+    height: 230px;>
+					    <figcaption Style="font-size:20px;"><b>5000 maH<b><br> <b id="txt1" style="font-size:30px;color:green";>15$</b> <br> <button id="btn1" onclick="Added()"> <b style="font-size:20px;">Add To Cart</b></button> </figcaption>
+                                                
+			
+					   </figure>						
+                   
+              </div>
+  <div class="column">
+                   <figure>
+				   <img src="10000mah.jpg" alt="coiled" width:100%;
+    height: 230px;>
+ <figcaption Style="font-size:20px;"><b>10000 maH<b><br> <b id="txt2"style="font-size:30px;color:green";>20$</b> <br> <button id="btn1" onclick="Added1()"><b style="font-size:20px;">Add To Cart</b></button> </figcaption>  
+  </figure>
+  
+  
+  </div>
+  <div class="column">
+<figure>                  
+				  <img src="12000mah.jpg" alt="aux-apple" width:100%;
+    height: 230px;>
+ <figcaption Style="font-size:20px;"><b>12000 maH<b><br> <b id="txt3" style="font-size:30px;color:green";>30$</b> <br> <button id="btn1" onclick="Added2()"><b style="font-size:20px;">Add To Cart</b></button> </figcaption> 
+ </figure>
+ </div>
+</div>
 
-<p style="text-align:center">At Mobile Station, we strive to create products that assist people realize the power of technology and make their lives better, easier and more pleasing. 
 
-
-It all began with a dream and a plan to build various technologies serving shops all around the community to later materialize and become the well-known. 
-
-
-
-Today, Mobile Station has many perspectives to enhance the technology that connects us to the people, activities, and experiences we love.  Products are notorious for their simplicity and ease of use.
-
-
-
-We are looking forward to have  products within the reach of all individuals and in every home; all using nothing but our renowned technologies.
-
-</p>
-
-       <footer class="footer-distributed">
+      <footer class="footer-distributed">
 
 			<div class="footer-left">
 
@@ -98,7 +113,32 @@ We are looking forward to have  products within the reach of all individuals and
 
 		</footer>
 
-	</body>
+	
+
+
+<script>
+function Added() {
+  document.getElementById("txt1").innerHTML = "Added to card !";
+  }
+function Added1(){
+  document.getElementById("txt2").innerHTML = "Added to card !";
+  }
+  function Added2(){
+    document.getElementById("txt3").innerHTML = "Added to card !";
+	}
+	
+	</script>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

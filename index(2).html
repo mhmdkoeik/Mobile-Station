@@ -1,5 +1,4 @@
 <html>
-
 <title> Mobile Station </title>
 <head>
 <meta charset="utf-8"/>
@@ -15,7 +14,7 @@
 
  <div class="header">
   <div class="logo">
- 
+  
   </div>
    <a  class ="active" href="Mobile-Station.html" >Home</a>
     <div class="dropdown">
@@ -23,7 +22,7 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-       <a href="Aux-Categ.html">Aux </a>
+    <a href="Aux-Categ.html">Aux </a>
         <a href="bluetooth-categ.html">Bluetooth Speakers</a>
           <a href="C:/Users/user/Desktop/Mobile-Station/Cables-categ.html">Cables</a>
 	           <a href="Car-Chargers-catg.html">Car Chargers</a>
@@ -39,16 +38,15 @@
   <a href="Contact-Us.html">Contact-Us</a>
   <a href="About.html">About</a></b>
   
-
 	</div>
 <br> 
  <p style="text-align:center;" ><img src="logo.jpg" alt="Logo" ></p>
 
           <div class="column">
                          <figure>              
-				        <img src="5000mah.jpg" alt="straight" width:100%;
+				        <img src="aux-straight.jpg" alt="straight" width:100%;
     height: 230px;>
-					    <figcaption Style="font-size:20px;"><b>5000 maH<b><br> <b style="font-size:30px;color:green";>15$</b> <br> <button id="btn1" onclick="alert('Added to Cart ')"><b style="font-size:20px;">Add To Cart</b></button> </figcaption>
+					    <figcaption Style="font-size:20px;"><b>Aux-Straight<b><br> <b id="txt1" style="font-size:30px;color:green";>5$</b> <br> <button id="btn1" onclick="Added()"> <b style="font-size:20px;">Add To Cart</b></button> </figcaption>
                                                 
 			
 					   </figure>						
@@ -56,24 +54,40 @@
               </div>
   <div class="column">
                    <figure>
-				   <img src="10000mah.jpg" alt="coiled" width:100%;
+				   <img src="aux-coiled.jpg" alt="coiled" width:100%;
     height: 230px;>
- <figcaption Style="font-size:20px;"><b>10000 maH<b><br> <b style="font-size:30px;color:green";>20$</b> <br> <button id="btn1" onclick="alert('Added to Cart ')"><b style="font-size:20px;">Add To Cart</b></button> </figcaption>  
+ <figcaption Style="font-size:20px;"><b>Aux-Coiled<b><br> <b id="txt2" style="font-size:30px;color:green";>8$</b> <br> <button id="btn1" onclick="Added1()"> <b style="font-size:20px;">Add To Cart</b></button> </figcaption>  
   </figure>
-  
+   
+   
   
   </div>
   <div class="column">
 <figure>                  
-				  <img src="12000mah.jpg" alt="aux-apple" width:100%;
+				  <img src="aux-apple.jpg" alt="aux-apple" width:100%;
     height: 230px;>
- <figcaption Style="font-size:20px;"><b>12000 maH<b><br> <b style="font-size:30px;color:green";>30$</b> <br> <button id="btn1" onclick="alert('Added to Cart ')"><b style="font-size:20px;">Add To Cart</b></button> </figcaption> 
+ <figcaption Style="font-size:20px;"><b>Aux-Apple<b><br> <b id="txt3" style="font-size:30px;color:green";>15$</b> <br> <button id="btn1" onclick="Added2()"><b style="font-size:20px;">Add To Cart</b></button> </figcaption> 
  </figure>
  </div>
 </div>
 
+<script>
+function Added() {
+  document.getElementById("txt1").innerHTML = "Added to card !";
+  }
+function Added1(){
+  document.getElementById("txt2").innerHTML = "Added to card !";
+  }
+  function Added2(){
+    document.getElementById("txt3").innerHTML = "Added to card !";
+	}
 
-      <footer class="footer-distributed">
+
+</script>
+
+
+      
+	  <footer class="footer-distributed">
 
 			<div class="footer-left">
 
@@ -103,9 +117,9 @@
 
 				<form  action="mailto:koeikrobben10@gmail.com" method="post" enctype="text/plain">
 
-					<input type="text" name="email" placeholder="Email" />
+					<input type="email" name="email" placeholder="Email" />
 					<textarea name="message" placeholder="Message"></textarea>
-					<button>Send</button>
+					<button >Send</button>
 
 				</form>
 
