@@ -36,21 +36,21 @@ addEventListener("keyup", function (key) {
 var reset = function () {
   Customer.x = canvas.width / 2;
   Customer.y = canvas.height / 2;
-  Phone.x = 32 + (Math.random() * (canvas.width - 64));
-  Phone.y = 32 + (Math.random() * (canvas.height - 64));
+  Phone.x = (Math.random() * (canvas.width - 50 ));
+  Phone.y = (Math.random() * (canvas.height - 50));
 };
-var update = function (modifier) {
+var move = function (constant) {
   if (87 in keysDown) { 
-    Customer.y -= Customer.speed * modifier;
+    Customer.y -= Customer.speed * constant;
   }
   if (83 in keysDown) { 
-    Customer.y += Customer.speed * modifier;
+    Customer.y += Customer.speed * constant ;
   }
   if (65 in keysDown) { 
-    Customer.x -= Customer.speed * modifier;
+    Customer.x -= Customer.speed * constant;
   }
   if (68 in keysDown) { 
-    Customer.x += Customer.speed * modifier;
+    Customer.x += Customer.speed * constant;
   }
 if (
     Customer.x <= (Phone.x + 32)
@@ -62,7 +62,7 @@ if (
     reset();
   }
 };
-var render = function () {
+var Draw = function () {
   if (bReady) {
     ctx.drawImage(bImage, 0, 0);
   }
@@ -73,25 +73,25 @@ var render = function () {
     ctx.drawImage(PhoneImage, Phone.x, Phone.y);
   }
   ctx.fillStyle = "rgb(250, 250, 250)";
-  ctx.font = "24px Helvetica";
+  ctx.font = "20px arial";
   ctx.textAlign = "left";
   ctx.textBaseline = "top";
   ctx.fillText("Phone is caught: " + PhoneCaught, 20, 20);
   ctx.fillText("CountDown: " + count, 20, 50);
-  if (finished==true && PhoneCaught>=20){
+  if (finished==true && PhoneCaught>=30){
          
 		 ctx.fillText("Very Good!",200,200)
 
 }
-else if (finished==true && PhoneCaught>=10){
+else if (finished==true && PhoneCaught>=20){
 			 ctx.fillText("Nice! but hope better",200,200)
 }
-else if(finished==true && PhoneCaught<10){
+else if(finished==true && PhoneCaught<20){
 			 ctx.fillText("Game Over!",200,200)
 }
 
 };
-var count = 45; 
+var count = 40; 
 var finished = false;
 var counter =function(){
   count=count-1; 
@@ -106,8 +106,8 @@ var counter =function(){
 }
 setInterval(counter,1000);
 var main = function () {
-  update(0.02); 
-  render();
+  move(0.02); 
+  Draw();
   requestAnimationFrame(main);
 };
 var w = window;
